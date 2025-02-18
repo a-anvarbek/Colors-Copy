@@ -1,0 +1,85 @@
+.containerColors{
+  width: 100%;
+  height: calc(100% - 100px);
+  background-color: green;
+  position: absolute;
+  top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.color{
+  width: 20%;
+  height: 25%;
+  cursor: pointer;
+  position: relative;
+  float: left;
+}
+
+p{
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 43%;
+  width: 95%;
+  text-align: right; 
+}
+
+.title{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+.copy-text {
+  position: absolute;
+  top: 30%;
+  left: 28%;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  width: 20%;
+  text-align: center;
+}
+
+.format{
+  background-color: #000;
+  width: 270px;
+  border-radius: 4px;
+  height: 36px;line-height: 34px;
+  color: #fff;
+  font-size: 15px;
+  text-align: right;
+  font-weight: 600;
+  cursor: pointer;
+  text-indent: -24px;
+  user-select: none; 
+}
+
+select{  
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none; 
+  border: none;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  height: 36px;
+}
+
+option{
+  color: #808080;
+  font-size: 15px;
+}
+
+.song button{
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.back{
+  font-size: 18px;
+}
