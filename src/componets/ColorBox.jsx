@@ -1,12 +1,13 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
+import CopyToast from "./CopyToast";
 
 function ColorBox({ name, hex }) {
   const [showCopy, setShowCopy] = useState(false);
+  const [toastMessage, setToastMessage] = useState("");
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(hex);
-    alert(`${hex} copied!`);
+    setToastMessage(`${hex} copied!`);
   };
 
   return (
@@ -19,6 +20,7 @@ function ColorBox({ name, hex }) {
     >
       {showCopy && <span className="copy-text">Copy</span>}
       <p>{name}</p>
+      {toastMessage && <CopyToast message={toastMessage} onClose={() => setToastMessage("")} />}
     </div>
   );
 }
